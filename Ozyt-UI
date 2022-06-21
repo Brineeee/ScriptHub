@@ -6,7 +6,7 @@ if Lib then
 end
 
 -- Customize Color Ui --
-_G.Color = Color3.fromRGB(120, 255, 0) 
+_G.Color = _G.UiColor or Color3.fromRGB(120, 255, 0)
 ------------------------
 
 local TweenService = game:GetService("TweenService")
