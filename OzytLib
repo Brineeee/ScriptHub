@@ -6,7 +6,7 @@ if Lib then
 end
 
 
--- Stolen from BlackTrap v1.3 --
+-- Do not edit this if you are not know how to edit sources --
 _G.Color = Color3.fromRGB(0,255,255) 
 _G.WindowBackgroundColor = Color3.fromRGB(12, 12, 12)
 _G.BackgroundItemColor = Color3.fromRGB(20, 20, 20)
