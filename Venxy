@@ -1,4 +1,7 @@
--- venyx ui lib reuploaded by me
+--[[
+Venxy | Fixed by mech#0945
+Now draggable is now working for phones! 😁
+]] 
 -- init
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -156,7 +159,7 @@ do
 		return key
 	end
 	
-	function utility:DraggingEnabled(frame, parent)
+	function utility:DraggingEnabled(frame, parent)-- DONT MIND THIS PIECE OF SHIT! 
 	
 		parent = parent or frame
 		
@@ -225,10 +228,10 @@ do
 				Image = "rbxassetid://4641149554",
 				ImageColor3 = themes.Background,
 				ScaleType = Enum.ScaleType.Slice,
-				SliceCenter = Rect.new(4, 4, 296, 296)
-                                Active = true
-                                Selectable = true
-                                Draggable = true
+				SliceCenter = Rect.new(4, 4, 296, 296), 
+                                Active = true, 
+                                Selectable = true, 
+                                Draggable = true-- FIXED! 
 			}, {
 				utility:Create("ImageLabel", {
 					Name = "Glow",
