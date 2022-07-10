@@ -1052,7 +1052,7 @@ do
 				Image = "rbxassetid://5028857472",
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
 				ScaleType = Enum.ScaleType.Slice,
-				SliceCenter = Rect.new(2, 2, 298, 298)
+				SliceCenter = Rect.new(2, 2, 298, 298), 
                                 Active = true, 
                                 Selectable = true, 
                                 Draggable = true-- FIXED! 
