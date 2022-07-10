@@ -158,9 +158,7 @@ do
 		
 		return key
 	end
-	--[[
-Dont mind ( utility:DraggingEnabled(frame, parent) Thats the old dragging
-          ]] 
+
 	function utility:DraggingEnabled(frame, parent) 
 	
 		parent = parent or frame
