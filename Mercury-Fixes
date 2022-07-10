@@ -453,7 +453,10 @@ function Library:create(options)
 		Size = UDim2.new(),
 		Theme = {BackgroundColor3 = "Main"},
 		Centered = true,
-		ClipsDescendants = true		
+		ClipsDescendants = true, 
+                Active = true, 
+                Selectable = true, 
+                Draggable = true		
 	}):round(10)
 
 	core:fade(true, nil, 0.2, true)
@@ -577,9 +580,6 @@ function Library:create(options)
 		Size = UDim2.new(1, -10, 0, 25),
 		Position = UDim2.new(0, 5,0, 35),
 		Theme = {BackgroundColor3 = "Secondary"}, 
-                Active = true, 
-                Selectable = true, 
-                Draggable = true
 	}):round(5)
 
 	local searchIcon = urlBar:object("ImageLabel", {
