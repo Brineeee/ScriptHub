@@ -23,7 +23,7 @@ local themes = {
 	Accent = _G.Accent or Color3.fromRGB(10, 10, 10), 
 	LightContrast = _G.LightC or Color3.fromRGB(20, 20, 20), 
 	DarkContrast = _G.Dark or Color3.fromRGB(14, 14, 14),  
-	TextColor = _G.TextColor Color3.fromRGB(120, 255, 0)
+	TextColor = _G.TextColor or Color3.fromRGB(120, 255, 0)
 }
 
 do
