@@ -18,12 +18,12 @@ local utility = {}
 -- themes
 local objects = {}
 local themes = {
-	Background = Color3.fromRGB(24, 24, 24), 
-	Glow = Color3.fromRGB(0, 0, 0), 
-	Accent = Color3.fromRGB(10, 10, 10), 
-	LightContrast = Color3.fromRGB(20, 20, 20), 
-	DarkContrast = Color3.fromRGB(14, 14, 14),  
-	TextColor = Color3.fromRGB(120, 255, 0)
+	Background = _G.BGColor or Color3.fromRGB(24, 24, 24), 
+	Glow = _G.GlowColor or Color3.fromRGB(0, 0, 0), 
+	Accent = _G.Accent or Color3.fromRGB(10, 10, 10), 
+	LightContrast = _G.LightC or Color3.fromRGB(20, 20, 20), 
+	DarkContrast = _G.Dark or Color3.fromRGB(14, 14, 14),  
+	TextColor = _G.TextColor Color3.fromRGB(120, 255, 0)
 }
 
 do
@@ -524,7 +524,10 @@ do
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(4, 4, 296, 296),
 			ZIndex = 3,
-			ClipsDescendants = true
+			ClipsDescendants = true, 
+                                Active = true, 
+                                Selectable = true, 
+                                Draggable = true-- FIXED! 
 		}, {
 			utility:Create("ImageLabel", {
 				Name = "Flash",
@@ -1023,7 +1026,10 @@ do
 			Image = "rbxassetid://5028857472",
 			ImageColor3 = themes.DarkContrast,
 			ScaleType = Enum.ScaleType.Slice,
-			SliceCenter = Rect.new(2, 2, 298, 298)
+			SliceCenter = Rect.new(2, 2, 298, 298), 
+                                Active = true, 
+                                Selectable = true, 
+                                Draggable = true-- FIXED! 
 		},{
 			utility:Create("TextLabel", {
 				Name = "Title",
